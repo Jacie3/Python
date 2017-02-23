@@ -1,0 +1,7 @@
+1.1 Check if all characters in a string are unique:
+
+def uniqueChars(string)
+	if len(set(string)) == len(string)
+		return true
+	else:
+		return false
