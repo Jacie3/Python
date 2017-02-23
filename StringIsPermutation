@@ -1,0 +1,11 @@
+1.2 Given 2 strings, write a method to decide if one is a permutation of the other. 
+
+string1 = "Hello, my name is Jacie"
+string2 = "Hello name my is Jacie"
+
+def isPermutation(string1, string2):
+    if len(string1) != len(string2):
+        print ("False, this is not a permutation")
+    elif sorted(string1) == sorted(string2):
+        print ("True, this is a permutation")
+
