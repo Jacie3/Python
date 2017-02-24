@@ -1,0 +1,17 @@
+1.4 Given a string, write a function to check if it is a permutation of a palindrome. 
+
+Because we know that a palindrome has to have matching letters and only one letter that does not have a match,
+if we save the unmatched letters to a set (mySet) then we can see if the lenght of that set is greater than 1.
+If mySet is greater than 1, then logically we know that it cannot be a palindrome.
+
+def permutation_palindrome(string):
+    mySet = set()
+    for char in string.lower():
+        if char in mySet:
+            mySet.remove(char)
+        else:
+            mySet.add(char)
+    if (len(mySet)) > 1:
+        print ("This is not a palindrome")
+    else:
+        print("This is a Palindrome!")
